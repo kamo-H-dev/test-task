@@ -1,0 +1,71 @@
+body{
+    background-color: #f5f5f5;
+}
+body.admin_side{
+    background-color: #ffffff;
+}
+.dataTables_wrapper{
+    margin-top: 50px;
+}
+.bs-example {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    padding: 15px;
+    margin-top: 100px;
+
+
+}
+.toaster {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    background-color: #ffffff;
+    font-weight: 400;
+}
+
+#snackbar {
+    border: 1px solid #34bfa3;
+    color: #34bfa3;
+}
+
+#snackbarError {
+    border: 1px solid #bf0c13;
+    color: #bf0c13;
+}
+
+#snackbar.show, #snackbarError.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
